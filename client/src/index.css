@@ -1,0 +1,27 @@
+:root {
+  --font-family: "Satoshi", sans-serif;
+
+  --brand-primary: #0C420A;
+  --brand-secondary: #FFC204;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 10px;
+}
+
+
+h1 {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 57.6px;
+  letter-spacing: -0.05em;
+}
