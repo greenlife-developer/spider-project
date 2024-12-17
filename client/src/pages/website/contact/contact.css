@@ -1,0 +1,129 @@
+.contact_section {
+  padding: 155px 100px;
+  display: grid;
+  gap: 52px;
+  grid-template-columns: 1.4fr 2fr;
+}
+
+.contact_info .contact_header {
+  position: relative;
+  margin: 0 0 65px;
+}
+
+.contact_info .contact_header h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 31.2px;
+  letter-spacing: -0.05em;
+  color: var(--brand-27c);
+  margin: 0 0 12px;
+}
+
+.contact_info .contact_header h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 67.2px;
+  letter-spacing: -0.05em;
+  color: var(--brand-primary);
+}
+
+.contact_info .contact_header h1 span {
+  display: block;
+}
+
+.contact_info .contact_header img {
+  position: absolute;
+  bottom: 63px;
+  left: 110px;
+}
+
+.contact_info .sub_items {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.contact_info .sub_items .sub_item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.contact_info .sub_items .sub_item img {
+  padding: 12px;
+}
+
+.contact_info .sub_items .sub_item h4 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21.6px;
+  letter-spacing: -0.03em;
+  margin: 0 0 4px;
+}
+
+.contact_info .sub_items .sub_item p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.2px;
+}
+
+/* 
+.contact_section .contact_form {
+    width: 622px;
+} */
+
+.contact_form form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact_form .form_field {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.contact_form .form_field > div {
+  width: 100%;
+}
+
+.contact_form .form_field > div input,
+.contact_form .form_field > div textarea {
+  width: 100%;
+  padding: 14px 20px;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19.2px;
+  letter-spacing: -0.03em;
+  border-radius: 12px;
+  background: var(--brand-f6);
+  color: var(--brand-27c);
+}
+
+.contact_form .form_field > div label {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 19.2px;
+    letter-spacing: -0.03em;
+    color: var(--brand-primary);
+    margin: 0 0 12px;
+}
+
+.contact_form form > button {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  padding: 24px 0;
+  border-radius: 12px;
+  background: var(--brand-primary);
+  color: #fff;
+  border: none;
+  margin-top: 23px;
+  cursor: pointer;
+  width: 100%;
+}

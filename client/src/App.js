@@ -11,6 +11,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Home from "./pages/website/Home/Home";
 import About from "./pages/website/About/About";
 import Faq from "./pages/website/faq/Faq";
+import Contact from "./pages/website/contact/Contact";
 
 axios.defaults.withCredentials = true;
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/faqs" element={<Faq />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,12 +1,12 @@
 import React from "react";
 
 import Nav from "../../../components/Header/Nav";
-import vector from "../../../assets/images/hero_vector.png";
-
-import "./faq.css";
 import FaqItem from "./FaqItem";
 import ReadyToConnect from "../../../components/ready_to_connect/ReadyToConnect";
 import Footer from "../../../components/Footer/Footer";
+import vector from "../../../assets/images/hero_vector.png";
+
+import "./faq.css";
 
 const Faq = () => {
   const faqItems = [
