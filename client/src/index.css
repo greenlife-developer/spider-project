@@ -5,6 +5,7 @@
   --brand-secondary: #FFC204;
   --nav-background: #fff;
   --brand-white: #fff;
+  --brand-black:   #04000B;
   --brand-grey: #36383A;
   --brand-home-users-h3: #488746;
   --brand-home-users-p: #868788;
@@ -12,6 +13,11 @@
   --ready-background: #DAEBD9;
   --brand-footer-text-location: #373634;
   --footer-copyright-tex: #656565;
+  --about-h3: #878680;
+  --about-why-us-bg: #FAFAFA;
+  --brand-66: #666666;
+
+
 
 
 
@@ -32,9 +38,4 @@ html {
 }
 
 
-h1 {
-  font-size: 48px;
-  font-weight: 500;
-  line-height: 57.6px;
-  letter-spacing: -0.05em;
-}
+

@@ -113,29 +113,26 @@ const Home = () => {
           </div>
           <div className="why_item">
             <img src={reliable} alt="" />
-            <h3>Convenience at Your Fingertips</h3>
+            <h3>Secure and Reliable Transactions</h3>
             <p>
-              SPIDA connects farmers directly with consumers and businesses,
-              cutting out middlemen to ensure fair pricing and better profits
-              for farmers.
+              Payments are safely managed on the platform and released only
+              after delivery confirmation, protecting both sellers and buyers
             </p>
           </div>
           <div className="why_item">
             <img src={control} alt="" />
-            <h3>Convenience at Your Fingertips</h3>
+            <h3>Stay in Control</h3>
             <p>
-              SPIDA connects farmers directly with consumers and businesses,
-              cutting out middlemen to ensure fair pricing and better profits
-              for farmers.
+              Real-time tracking and verified logistics ensure smooth delivery
+              from farm to final destination, with no guesswork.
             </p>
           </div>
           <div className="why_item">
             <img src={rely} alt="" />
-            <h3>Convenience at Your Fingertips</h3>
+            <h3>Support You Can Rely On</h3>
             <p>
-              SPIDA connects farmers directly with consumers and businesses,
-              cutting out middlemen to ensure fair pricing and better profits
-              for farmers.
+              Our 24/7 customer support is always here to assist, ensuring
+              you're never left stranded.
             </p>
           </div>
         </div>
