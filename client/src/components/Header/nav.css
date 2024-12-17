@@ -1,0 +1,59 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--nav-background);
+  padding: 6px 150px 6px 100px;
+  box-shadow: 0px 0px 60px 0px #0000001a;
+}
+
+.navbar .nav_items {
+  display: flex;
+  align-items: center;
+  gap: 110px;
+}
+
+.navbar .nav_items ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 48px;
+}
+
+.navbar .nav_items ul li a {
+  text-decoration: none;
+  color: var(--brand-primary);
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 10.8px;
+  text-transform: uppercase;
+}
+
+.navbar .nav_items ul li a.active {
+  font-weight: 700;
+}
+
+.nav_items .user_account > .login_buttons {
+  display: flex;
+  gap: 4px;
+}
+
+.nav_items .user_account > .login_buttons button {
+  padding: 12px 24px;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 14.63px;
+  letter-spacing: -0.03em;
+  background: none;
+  border-radius: 12px;
+}
+
+.nav_items .user_account > .login_buttons button.login {
+  border: 1px solid var(--brand-primary);
+  color: var(--brand-primary);
+}
+
+.nav_items .user_account > .login_buttons button.register {
+  color: var(--brand-white);
+  background-color: var(--brand-primary);
+}

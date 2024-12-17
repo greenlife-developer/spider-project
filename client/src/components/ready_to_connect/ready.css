@@ -1,0 +1,40 @@
+.ready_to_connect {
+  padding: 93px 53px;
+  margin: 100px;
+  background: var(--ready-background);
+  border-radius: 24px;
+  display: flex;
+  gap: 117px;
+  align-items: center;
+}
+
+.ready_item h1 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: -0.05em;
+  color: var(--brand-primary);
+  margin: 0 0 12px;
+}
+
+.ready_item p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  letter-spacing: -0.05em;
+  text-align: left;
+  color: var(--brand-home-users-h3);
+  margin: 0 0 48px;
+}
+
+.ready_item button {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.8px;
+    letter-spacing: -0.05em;
+    color: var(--brand-white);
+    border: none;
+    border-radius: 12px;
+    padding: 15px 95px;
+    background: var(--brand-primary);
+}
