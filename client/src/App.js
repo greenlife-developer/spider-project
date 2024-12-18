@@ -12,6 +12,8 @@ import Home from "./pages/website/Home/Home";
 import About from "./pages/website/About/About";
 import Faq from "./pages/website/faq/Faq";
 import Contact from "./pages/website/contact/Contact";
+import News from "./pages/website/news/News";
+import Marketplace from "./pages/product/marketplace/Marketplace";
 
 axios.defaults.withCredentials = true;
 
@@ -24,6 +26,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/faqs" element={<Faq />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/news" element={<News />} />
+        <Route path="/marketplace" element={<Marketplace />} />
       </Routes>
     </BrowserRouter>
   );
