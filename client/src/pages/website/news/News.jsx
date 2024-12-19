@@ -13,7 +13,7 @@ import "./news.css";
 const News = () => {
   const { id } = useParams();
 
-  const relatedPosts = posts.slice(0,3);
+  const relatedPosts = posts.slice(0, 3);
 
   const selectedPost = relatedPosts.filter((post, index) => post.id == id)[0];
 
@@ -59,7 +59,7 @@ const News = () => {
                   {paragraphs.slice(0, 2).map((paragraph, index) => (
                     <p key={index}>{paragraph}</p>
                   ))}
-                  <Link to="/">
+                  <Link to={"/news/" + post.id}>
                     Read more <img className="arrow" src={arrowRight} alt="" />
                   </Link>
                 </div>

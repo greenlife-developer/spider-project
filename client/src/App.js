@@ -8,6 +8,7 @@ import axios from "axios";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+import ScrollToTop from "./customHook/useScrollToTop";
 import Home from "./pages/website/Home/Home";
 import About from "./pages/website/About/About";
 import Faq from "./pages/website/faq/Faq";
@@ -21,6 +22,7 @@ function App() {
   return (
     <BrowserRouter>
       <ToastContainer />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
