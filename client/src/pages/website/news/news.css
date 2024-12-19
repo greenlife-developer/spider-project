@@ -73,7 +73,7 @@
   margin: 0 0 30px;
 }
 
-.related_content .related_content_items {
+.related_content_items {
   display: grid;
   gap: 9px;
   grid-template-columns: 1fr 1fr 1fr;

@@ -27,6 +27,7 @@ function App() {
         <Route path="/faqs" element={<Faq />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/news" element={<News />} />
+        <Route path="/news/:id" element={<News />} />
         <Route path="/marketplace" element={<Marketplace />} />
       </Routes>
     </BrowserRouter>
