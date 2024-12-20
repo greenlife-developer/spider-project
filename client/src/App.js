@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  BrowserRouter,
-  Routes,
-  Route
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import axios from "axios";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -15,6 +11,8 @@ import Faq from "./pages/website/faq/Faq";
 import Contact from "./pages/website/contact/Contact";
 import News from "./pages/website/news/News";
 import Marketplace from "./pages/product/marketplace/Marketplace";
+import Login from "./pages/product/auth/login/Login";
+import Register from "./pages/product/auth/register/Register";
 
 axios.defaults.withCredentials = true;
 
@@ -31,6 +29,9 @@ function App() {
         <Route path="/news" element={<News />} />
         <Route path="/news/:id" element={<News />} />
         <Route path="/marketplace" element={<Marketplace />} />
+
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
     </BrowserRouter>
   );

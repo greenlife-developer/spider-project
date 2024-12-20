@@ -46,6 +46,7 @@
   letter-spacing: -0.03em;
   background: none;
   border-radius: 12px;
+  cursor: pointer;
 }
 
 .nav_items .user_account > .login_buttons button.login {

@@ -1,36 +1,28 @@
 :root {
   --font-family: "Satoshi", sans-serif;
 
-  --brand-primary: #0C420A;
-  --brand-secondary: #FFC204;
+  --brand-primary: #0c420a;
+  --brand-secondary: #ffc204;
   --nav-background: #fff;
   --brand-white: #fff;
-  --brand-black:   #04000B;
-  --brand-grey: #36383A;
+  --brand-black: #04000b;
+  --brand-grey: #36383a;
   --brand-home-users-h3: #488746;
   --brand-home-users-p: #868788;
   --brand-aaa: #aaa;
-  --ready-background: #DAEBD9;
+  --ready-background: #daebd9;
   --brand-footer-text-location: #373634;
   --footer-copyright-tex: #656565;
   --about-h3: #878680;
-  --about-why-us-bg: #FAFAFA;
+  --about-why-us-bg: #fafafa;
   --brand-66: #666666;
-  --brand-e4: #E4E4E4;
-  --brand-f47: #4BAF47;
-  --brand-27c: #7DA27C;
-  --brand-f6: #F6F6F6;
-  --brand-A80: #0C420A80;
+  --brand-e4: #e4e4e4;
+  --brand-f47: #4baf47;
+  --brand-27c: #7da27c;
+  --brand-f6: #f6f6f6;
+  --brand-A80: #0c420a80;
   --brand-56: #565656;
-  --brand-D9: #D9D9D9;
-
-
-
-
-
-
-
-
+  --brand-D9: #d9d9d9;
 }
 
 * {
