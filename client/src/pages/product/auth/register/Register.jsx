@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 
+import FarmerForm from "../../../../components/forms/FarmerForm";
+import LogisticsForm from "../../../../components/forms/LogisticsForm";
+import BuyerIndividualForm from "../../../../components/forms/BuyerIndividualForm";
+import BuyerBusinessForm from "../../../../components/forms/BuyerBusinessForm";
 import flower1 from "../../../../assets/images/product/flower1.png";
 import bannerfruit from "../../../../assets/images/banner_fruit.png";
 import flower2 from "../../../../assets/images/product/flower2.png";
+import fruits from "../../../../assets/images/product/fruits.png";
 
 import "./register.css";
-import FarmerForm from "../../../../components/forms/FarmerForm";
 
 const Register = () => {
   const [activeTab, setActiveTab] = useState("farmer");
@@ -89,7 +93,17 @@ const Register = () => {
         )}
       </div>
       <div className="signup_forms">
-        <FarmerForm />
+        {activeTab === "farmer" && <FarmerForm />}
+        {activeTab === "logistics" && <LogisticsForm />}
+        {activeTab === "buyer" && buyerType === "individual" && (
+          <BuyerIndividualForm />
+        )}
+        {activeTab === "buyer" && buyerType === "business" && (
+          <BuyerBusinessForm />
+        )}
+      </div>
+      <div className="flower">
+        <img src={fruits} alt="" className="fruits" />
       </div>
     </div>
   );

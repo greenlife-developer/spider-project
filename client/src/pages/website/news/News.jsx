@@ -22,20 +22,20 @@ const News = () => {
       <Nav />
       <section className="news_section_post_content">
         <div className="post_img">
-          <img src={selectedPost.imgSrc} alt="" />
-          <h3 className="img_label">{selectedPost.label}</h3>
+          <img src={selectedPost?.imgSrc} alt="" />
+          <h3 className="img_label">{selectedPost?.label}</h3>
         </div>
         <div className="post_title">
-          <h1>{selectedPost.title}</h1>
+          <h1>{selectedPost?.title}</h1>
         </div>
         <div className="post_content">
-          {selectedPost.body
+          {selectedPost?.body
             .split("\n")
             .filter((paragraph) => paragraph.trim() !== "")
             .map((paragraph, index) => (
               <p key={index}>{paragraph}</p>
             ))}
-          <h3>{selectedPost.date}</h3>
+          <h3>{selectedPost?.date}</h3>
         </div>
       </section>
 

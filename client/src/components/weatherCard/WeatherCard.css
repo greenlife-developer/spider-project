@@ -1,0 +1,131 @@
+.weather_card {
+  /* width: 400px; */
+  /* background: linear-gradient(to bottom, #e8f4f2, #f5f8f7); */
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 100px;
+  box-shadow: 0px 7px 24px 0px #00000033;
+  backdrop-filter: blur(99.43831634521484px);
+  background: linear-gradient(
+    180deg,
+    rgba(72, 135, 70, 0.5) 0%,
+    #ffffff 41.26%
+  );
+  border-radius: 45px;
+}
+
+.weather_card .location {
+  font-family: Montserrat;
+  font-size: 26.34px;
+  font-weight: 400;
+  line-height: 24.86px;
+  letter-spacing: -0.05em;
+  color: var(--brand-primary);
+  margin: 0 0 25px;
+}
+
+.weather_card .current_weather {
+  width: 250px;
+  text-align: center;
+}
+
+.current_weather .temperature {
+  font-family: Montserrat;
+  font-size: 59.66px;
+  font-weight: 700;
+  line-height: 72.73px;
+  text-align: center;
+  color: var(--brand-primary);
+}
+
+.current_weather .description {
+  font-family: Montserrat;
+  font-size: 17.4px;
+  font-weight: 400;
+  line-height: 19.89px;
+  letter-spacing: -0.05em;
+  text-align: center;
+}
+
+.current_weather img {
+  width: 200px;
+  height: 200px;
+}
+
+.forecast {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.forecast-item {
+  text-align: center;
+  padding: 24px 12px;
+  border-radius: 15px;
+}
+
+.forecast-item.active {
+  background: var(--brand-01A);
+}
+
+.forecast-item .time {
+  /* font-family: "PingFang SC"; */
+  font-size: 19.89px;
+  font-weight: 600;
+  line-height: 24.86px;
+  margin: 0 0 24px;
+  color: var(--brand-C6C);
+}
+
+.forecast-item > img {
+  width: 45px;
+  height: 45px;
+  margin: 0 0 24px;
+}
+
+.forecast-item .temp {
+  font-family: "Inter";
+  font-size: 24.86px;
+  font-weight: 600;
+  line-height: 30.09px;
+  color: var(--brand-C6C);
+}
+
+/* chart_info */
+.chart_info {
+  margin: 45px 24px 0;
+}
+
+.chart_info > img {
+  width: 100%;
+  height: 127px;
+  object-fit: cover;
+  position: relative;
+  top: 40px;
+}
+
+/* .chart-container {
+  position: relative;
+  width: 100%;
+  height: 50px;
+}
+
+.chart {
+  width: 100%;
+  height: 100%;
+}
+
+.chart-indicator {
+  position: absolute;
+  top: 12px; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border: 4px solid #ffa439;
+  border-radius: 50%;
+} */
