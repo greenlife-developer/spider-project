@@ -23,6 +23,8 @@ import AddNewFarm from "./pages/product/farm/AddNewFarm";
 import FarmList from "./pages/product/farm/FarmList";
 import Dashboard from "./pages/product/dashboard/Dashboard";
 import MyFarm from "./pages/product/farm/MyFarm";
+import AddNewProduce from "./pages/product/farm/AddNewProduce";
+import Wallet from "./pages/product/wallet/Wallet";
 
 axios.defaults.withCredentials = true;
 
@@ -92,6 +94,15 @@ function App() {
         />
 
         <Route
+          path="/my-farm/new-produce"
+          element={
+            <Layout>
+              <AddNewProduce />
+            </Layout>
+          }
+        />
+
+        <Route
           path="/my-farm/farms"
           element={
             <Layout>
@@ -104,7 +115,7 @@ function App() {
           path="/wallet"
           element={
             <Layout>
-              {/* <Profile /> */}
+              <Wallet />
             </Layout>
           }
         />

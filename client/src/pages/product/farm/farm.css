@@ -126,3 +126,9 @@
   border: none;
   border-radius: 12px;
 }
+
+.profile_details > .cancel button {
+  background-color: transparent;
+  border: .5px solid var(--brand-primary);
+  color: var(--brand-primary);
+}

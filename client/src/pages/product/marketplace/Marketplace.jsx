@@ -15,9 +15,9 @@ import star2 from "../../../assets/images/icons/2star.png";
 import star3 from "../../../assets/images/icons/3star.png";
 import star4 from "../../../assets/images/icons/4star.png";
 import vector from "../../../assets/images/hero_vector.png";
+import Footer from "../../../components/Footer/Footer";
 
 import "./marketplace.css";
-import Footer from "../../../components/Footer/Footer";
 
 const Marketplace = () => {
   const [selectedProductId, setSelectedProductId] = useState(null);
