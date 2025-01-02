@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 import FarmerForm from "../../../../components/forms/FarmerForm";
 import LogisticsForm from "../../../../components/forms/LogisticsForm";
@@ -12,16 +13,42 @@ import fruits from "../../../../assets/images/product/fruits.png";
 import "./register.css";
 
 const Register = () => {
-  const [activeTab, setActiveTab] = useState("farmer");
-  const [buyerType, setBuyerType] = useState("individual");
+  const location = useLocation();
+  const navigate = useNavigate();
+  const queryParams = new URLSearchParams(location.search);
+
+  // Get initial values from query parameters or fallback to defaults
+  const initialTab = queryParams.get("tab") || "farmer";
+  const initialBuyerType = queryParams.get("buyerType") || "individual";
+
+  const [activeTab, setActiveTab] = useState(initialTab);
+  const [buyerType, setBuyerType] = useState(initialBuyerType);
+
+  const updateQueryParams = (tab, type) => {
+    const params = new URLSearchParams();
+    params.set("tab", tab);
+    if (tab === "buyer") {
+      params.set("buyerType", type);
+    }
+    navigate(`?${params.toString()}`, { replace: true });
+  };
 
   const handleChangeActiveTab = (tab) => {
     setActiveTab(tab);
+    updateQueryParams(tab, buyerType);
   };
 
-  const handleChangeBuyerType = (tab) => {
-    setBuyerType(tab);
+  const handleChangeBuyerType = (type) => {
+    setBuyerType(type);
+    updateQueryParams(activeTab, type);
   };
+
+  // Sync state with query parameters on mount
+  useEffect(() => {
+    if (activeTab !== initialTab || buyerType !== initialBuyerType) {
+      updateQueryParams(activeTab, buyerType);
+    }
+  }, [activeTab, buyerType, initialTab, initialBuyerType]);
 
   return (
     <div className="register_page">

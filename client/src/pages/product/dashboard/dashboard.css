@@ -160,7 +160,7 @@
   background: var(--brand-primary);
   color: var(--brand-white);
   border-radius: 8px;
-}
+} 
 
 .recent_orders li {
   font-size: 10px;

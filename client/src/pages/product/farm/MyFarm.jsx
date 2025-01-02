@@ -9,7 +9,7 @@ import productItems from "../../../data/productList";
 import "./myFarm.css";
 
 const MyFarm = () => {
-    const navigate = useNavigate()
+  const navigate = useNavigate();
   const [currentPage, setCurrentPage] = useState(1); // State for the current page
   const itemsPerPage = 10; // Number of products per page
 
@@ -30,8 +30,8 @@ const MyFarm = () => {
   };
 
   const handleNewProduce = () => {
-    navigate("/my-farm/new-produce")
-  }
+    navigate("/my-farm/new-produce");
+  };
 
   return (
     <div className="my_farm_page">

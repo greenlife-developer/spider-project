@@ -25,6 +25,8 @@ import Dashboard from "./pages/product/dashboard/Dashboard";
 import MyFarm from "./pages/product/farm/MyFarm";
 import AddNewProduce from "./pages/product/farm/AddNewProduce";
 import Wallet from "./pages/product/wallet/Wallet";
+import Orders from "./pages/product/orders/Orders";
+import Notifications from "./pages/product/notifications/Notifications";
 
 axios.defaults.withCredentials = true;
 
@@ -119,11 +121,21 @@ function App() {
             </Layout>
           }
         />
+
         <Route
           path="/orders"
           element={
             <Layout>
-              {/* <Profile /> */}
+              <Orders />
+            </Layout>
+          }
+        />
+
+        <Route
+          path="/notifications"
+          element={
+            <Layout>
+              <Notifications />
             </Layout>
           }
         />

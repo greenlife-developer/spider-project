@@ -1,16 +1,22 @@
 import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 
 import logo from "../../assets/images/logo.png";
 import "./nav.css";
 
 const Nav = () => {
+  const navigate = useNavigate()
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const handleNavigateHome = () => {
+    navigate("/");
+  };
+
 
   return (
     <header>
       <nav className="navbar">
-        <div className="logo">
+        <div onClick={handleNavigateHome} className="logo">
           <img src={logo} alt="" />
         </div>
         <div className="nav_items">
