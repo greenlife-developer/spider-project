@@ -12,12 +12,12 @@ const AccountCreated = () => {
 
   const handleSetUpProfile = () => {
     alert(`Setting up profile`);
-    navigate("/profile");
+    navigate(`/profile/${type}`);
   };
 
   const handleGoToDashboard = () => {
     alert("Going to dashboard");
-    navigate("/dashboard");
+    navigate(`/dashboard/${type}`);
   };
 
   return (

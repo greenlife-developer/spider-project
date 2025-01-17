@@ -46,7 +46,7 @@ function App() {
 
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/verify/:otp" element={<Verify />} />
+        <Route path="/verify/:accountType" element={<Verify />} />
 
         <Route
           path="/registration-completed/:type"
@@ -55,7 +55,7 @@ function App() {
         <Route path="/plans" element={<Plans />} />
 
         <Route
-          path="/profile"
+          path="/profile/:accountType"
           element={
             <Layout>
               <Profile />

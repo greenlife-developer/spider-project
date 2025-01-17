@@ -31,6 +31,12 @@ const Layout = ({ children }) => {
     navigate("/");
   };
 
+  const userType = "logistics";
+
+  const filteredMenu = menu.filter((item) =>
+    item.accountTypes?.includes(userType)
+  );
+
   return (
     // layout
     <div className="layout">
@@ -67,7 +73,7 @@ const Layout = ({ children }) => {
       <div className="main_content">
         <div className="sidebar">
           <div className="sidebar_content">
-            {menu.map((item, index) => {
+            {filteredMenu.map((item, index) => {
               return <SidebarItem key={index} item={item} />;
             })}
 

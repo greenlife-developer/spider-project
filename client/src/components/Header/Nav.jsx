@@ -12,7 +12,6 @@ const Nav = () => {
     navigate("/");
   };
 
-
   return (
     <header>
       <nav className="navbar">
@@ -61,3 +60,4 @@ const Nav = () => {
 };
 
 export default Nav;
+

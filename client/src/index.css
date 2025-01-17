@@ -40,8 +40,6 @@
 
 
 
-
-
 }
 
 * {
@@ -51,6 +49,7 @@
   font-family: var(--font-family);
   scroll-behavior: smooth;
 }
+
 
 html {
   font-size: 10px;

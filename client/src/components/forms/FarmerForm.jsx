@@ -44,7 +44,7 @@ const FarmerForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form Data Submitted:", formData);
-    navigate("/verify/12");
+    navigate("/verify/farmer"); 
     // Add form submission logic here
   };
 

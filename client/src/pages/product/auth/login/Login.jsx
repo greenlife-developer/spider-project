@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import loginImg from "../../../../assets/images/product/loginimg.png";
 import flower1 from "../../../../assets/images/product/flower1.png";
@@ -9,6 +9,14 @@ import flower3 from "../../../../assets/images/product/flower3.png";
 import "./login.css";
 
 const Login = () => {
+  const navigate = useNavigate()
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    alert("Logging");
+    navigate("/dashboard");
+  };
+
   return (
     <div className="login_page">
       <div className="login_container">
@@ -18,7 +26,7 @@ const Login = () => {
         <div className="login_item login_item_form">
           <h1>Welcome back</h1>
           <p>Login with appropriate details</p>
-          <form action="" className="login_form">
+          <form onSubmit={handleLogin} className="login_form">
             <div className="form_field">
               <div>
                 <label htmlFor="email">Email Address</label>

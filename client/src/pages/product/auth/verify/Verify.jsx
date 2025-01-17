@@ -9,6 +9,7 @@ import "./verify.css";
 
 const Verify = () => {
   const inputsRef = useRef([]);
+  const { accountType } = useParams()
   const navigate = useNavigate();
   const [otpValues, setOtpValues] = useState(Array(6).fill(""));
 
@@ -16,10 +17,11 @@ const Verify = () => {
     alert("I am resending OTP");
   };
 
+  // console.log(accountType)
   const handleVerifyOTP = () => {
     const otp = otpValues.join("");
     alert(`Verifying OTP: ${otp}`);
-    navigate("/registration-completed/buyer");
+    navigate(`/registration-completed/${accountType}`);
   };
 
   const handleGoBack = () => {
